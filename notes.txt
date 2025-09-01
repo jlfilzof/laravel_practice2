@@ -1,0 +1,12 @@
+- Create a model along with all things needed:
+    php artisan make:model EntityName -all
+- do the models relationships
+- do the schema in migration file
+- do the factories
+- do the seeders (DatabaseSeeder too)
+- then, migrate (php artisan migrate:fresh --seed)
+
+- do the controllers
+- create a Resource (to follow convention in JSON responses)
+- create Filters folder
+- make a request (php artisan make:request V1\StoreCustomerRequest)
