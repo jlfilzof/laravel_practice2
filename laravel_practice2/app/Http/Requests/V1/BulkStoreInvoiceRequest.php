@@ -26,7 +26,7 @@ class BulkStoreInvoiceRequest extends FormRequest
             '*.customerId' => ['required', 'integer'],
             '*.amount' => ['required', 'numeric'],
             '*.status' => ['required', Rule::in('Billed', 'billed', 'Paid', 'paid', 'Void', 'void')],
-            '*.billDate' => ['required', 'date_format:Y-m-d H:i:s'],
+            '*.billedDate' => ['required', 'date_format:Y-m-d H:i:s'],
             '*.paidDate' => ['nullable', 'date_format:Y-m-d H:i:s'],
         ];
     }
